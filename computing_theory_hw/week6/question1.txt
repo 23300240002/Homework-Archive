@@ -1,0 +1,43 @@
+input: '100#100' # 测试
+blank: ' '
+start state: start
+table:
+  start:
+    0: {write: X, R: check0}
+    1: {write: X, R: check1}
+    '#': {R: check_y_end}
+    ' ': {R: accept}  # 都空则接受
+  check0:
+    0: R
+    1: R
+    Y: R  # 已标记处理过则可跳过
+    '#': {R: verify0}
+  check1:
+    0: R
+    1: R
+    Y: R  # 已标记处理过则可跳过
+    '#': {R: verify1}
+  verify0:
+    0: {write: Y, L: go_back}
+    1: {R: reject}
+    ' ': {R: reject}
+    Y: R  # 继续找0
+  verify1:
+    1: {write: Y, L: go_back}
+    0: {R: reject}
+    ' ': {R: reject}
+    Y: R  # 继续找1
+  go_back:
+    Y: L
+    '#': L
+    X: {R: start}
+    0: L
+    1: L
+    ' ': {R: reject}
+  check_y_end:
+    Y: R  # 继续检查Y
+    ' ': {R: accept}  # Y结束，匹配
+    0: {R: reject}  # 超出，拒绝
+    1: {R: reject}  # 
+  accept:
+  reject:

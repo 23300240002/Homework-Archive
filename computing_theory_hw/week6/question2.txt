@@ -1,0 +1,49 @@
+input: '0000000000000' # 13
+blank: ' '
+start state: start
+table:
+  start:
+    ' ': {R: accept}  # 空输入，n=0，接受
+    0: {write: X, R: init_second}  # 标记第一个0，初始化第二个斐波那契数
+  init_second:
+    ' ': {R: accept}  # 只有一个0，n=1，接受
+    0: {write: X, R: check_match}  # 标记第二个0，进入检查匹配状态
+  
+  # 当前是一个斐波那契的位置
+  check_match:
+    ' ': {R: accept}  # 无剩余0，匹配斐波那契数，接受
+    0: {write: X, L: find_the_first_x}  # 说明数更长，还要继续往右读
+  # 当前是一个非斐波那契的位置
+  check_excess:
+    ' ': {R: reject}  # 超出输入长度，拒绝
+    0: {write: X, L: find_the_first_x}  # 说明数更长，还要继续往右读
+  
+  # 第一个x表示当前存着的最大的斐波那契数
+  find_the_first_x:
+    0: L  # 向左移动跳过0
+    X: {L: find_the_second_x}  # 找第二个x
+  # 第二个x表示当前最左x标识符，实际代表右边是否达到斐波那契数
+  find_the_second_x:
+    0: L  # 继续左移
+    X: {write: 0, L: judge}  # 将X恢复为0，准备右移
+
+  # 关键区分
+  # trust向右行进目的是进行判断是否accept
+  # suspect向右行进目的是进行判断是否reject
+  judge:
+    ' ': {R: trust1}  # 到达最左的同时，说明右边也已经右移到了斐波那契的位置
+    0: {write: X, R: suspect1}  # 还没有到达最左，说明右边还没达到斐波那契的位置
+  suspect1:
+    0: R  # 向右移动跳过0
+    X: {R: suspect2}  # 遇到X，进入右移状态2
+  suspect2:
+    0: R  # 继续右移
+    X: {write: 0, R: check_excess}  # 将X恢复为0，检查是否超出
+  trust1:
+    0: R  # 向右移动跳过0
+    X: {R: trust2}  # 遇到X，进入右扫状态2
+  trust2:
+    0: R  # 继续右移
+    X: {R: check_match}  # 遇到X，返回检查匹配状态
+  accept:
+  reject:
