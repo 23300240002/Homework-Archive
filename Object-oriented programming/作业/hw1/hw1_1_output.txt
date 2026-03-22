@@ -1,0 +1,5 @@
+Please enter your name:Hello, Smith!
+Please enter you midterm and final exam grades:
+Enter all your homework grades, followed by end-of-file:
+Your final grade is 90.4
+Press any key to continue
