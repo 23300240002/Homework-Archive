@@ -1,2 +1,0 @@
-longest: Carpenter	
-shortest: Tom	Bob	
