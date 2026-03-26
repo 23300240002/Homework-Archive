@@ -9,8 +9,10 @@
 
 ## Discussion_on_films_and_British_and_American_culture → 影视与英美文化讨论 苗伟
 
-## Artificial-intelligence → 人工智能（H） 郑骁庆
+## Artificial-intelligence → 人工智能（H） 郑骁庆（暂不公开）
 
 ## Object-oriented programming → 面向对象程序设计 周雅倩
 
 ## Digital Signal Processing → 数字信号处理 薛向阳
+
+## Computer Graphics‌ → 计算机图形学 颜波（暂不公开）
