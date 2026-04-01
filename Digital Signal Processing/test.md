@@ -20,7 +20,13 @@ $$
 
 - **物理意义**： $X(e^{j\omega})$ 表示序列 $x[n]$ 中频率为 $\omega$ 的复指数分量的密度。由于离散时间信号的频率只在 $[-\pi,\pi]$ 区间内唯一表示（更高的频率会折叠到该区间），因此频谱以 $2\pi$ 为周期。
 
-- **常见例子**：矩形窗序列 $x[n] = \begin{cases} 1, & 0 \le n \le L-1 \\ 0, & \text{其他} \end{cases}$ 的 DTFT 为：
+- **常见例子**：矩形窗序列
+
+$$
+x[n]=\begin{cases}1, & 0\le n\le L-1 \\\\ 0, & \text{otherwise}\end{cases}
+$$
+
+其 DTFT 为：
 
 $$
 X(e^{j\omega}) = e^{-j\omega(L-1)/2} \frac{\sin(\omega L/2)}{\sin(\omega/2)}
@@ -189,7 +195,17 @@ $$
 X[k] = \sum_{n=0}^{N/2-1} x_{\text{even}}[n] W_{N/2}^{nk} + W_N^k \sum_{n=0}^{N/2-1} x_{\text{odd}}[n] W_{N/2}^{nk}
 $$
 
-记 $G[k] = \mathrm{DFT}_{N/2}[x_{\text{even}}[n]]$， $H[k] = \mathrm{DFT}_{N/2}[x_{\text{odd}}[n]]$，则有：
+记
+
+$$
+G[k]=\mathrm{DFT}_{N/2}[x_{\mathrm{even}}[n]]
+$$
+
+$$
+H[k]=\mathrm{DFT}_{N/2}[x_{\mathrm{odd}}[n]]
+$$
+
+则有：
 
 $$
 X[k] = G[k] + W_N^k H[k], \quad k=0,\dots,N/2-1
@@ -208,7 +224,11 @@ $$
 - **同时计算两个实序列的 DFT**：设 $x[n]$、 $y[n]$ 为两个实序列，构造 $g[n] = x[n] + j y[n]$。计算 $G[k] = \mathrm{DFT}[g[n]]$，则
 
 $$
-X[k] = \frac{G[k] + G^*[N-k]}{2}, \quad Y[k] = \frac{G[k] - G^*[N-k]}{2j}
+X[k]=\frac{G[k]+G^{*}[N-k]}{2}
+$$
+
+$$
+Y[k]=\frac{G[k]-G^{*}[N-k]}{2j}
 $$
 
 利用共轭对称性，一次 FFT 即可得到两个实序列的 DFT。
