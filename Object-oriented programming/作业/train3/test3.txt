@@ -1,0 +1,50 @@
+1. 使用关联容器编写程序，算出输入中每一个不同的单词出现的次数, 并且按照词典序输出单词及其次数。
+例如：输入: 
+I am from Shanghai . 
+I love Shanghai .
+输出:
+. 2
+I 2
+Shanghai 2
+am 1
+from 1
+love 1
+
+
+2. 编写程序产生交叉引用表，一行一行读入句子，根据空白符分割单词，记录每个单词出现的行号，并输出。
+输入: 
+I am from Shanghai .
+I love Shanghai .
+输出:
+. 1 2
+I 1 2
+Shanghai 1 2
+am 1
+from 1
+love 2
+
+3. 请使用C++ Lambda表达式配合STL算法完成以下任务。
+1）给定一个整数向量 std::vector<int> numbers = {3, 5, 2, 8, 1, 10};，使用Lambda实现：
+
+(a) 用 std::transform 将所有元素乘以2，生成新向量 doubled。
+(b) 用 std::copy_if 过滤出大于5的数，存入新向量 filtered。
+(c) 用 std::sort 按绝对值与5的差值升序排序（如|3-5|=2）。
+
+2）给定学生结构体向量：
+
+struct Student {
+    std::string name;
+    int score;
+};
+std::vector<Student> students = {{"Alice", 85}, {"Bob", 72}, {"Charlie", 90}};
+
+(a) 用 std::sort 按分数降序排序。
+(b) 用 std::for_each 打印分数大于80的学生名字。
+
+3） 给定一个整数向量 std::vector<int> numbers = {3, 5, 2, 8, 1, 10};，使用Lambda实现：
+用 std::accumulate 和Lambda计算所有偶数的乘积（如 {1, 2, 3, 4} → 2×4=8）。
+
+
+请在附件中的.cpp和.h文件的//TODO后添加代码，使程序完整。test3_output.txt为test3_input.txt为测试输入时的输出。请同学们使用这些测试数据来验证自己的程序。
+
+请把所有的.cpp和.h文件打包提交。

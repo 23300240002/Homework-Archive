@@ -1,0 +1,6 @@
+. 1 2
+I 1 2
+Shanghai 1 2
+am 1
+from 1
+love 2

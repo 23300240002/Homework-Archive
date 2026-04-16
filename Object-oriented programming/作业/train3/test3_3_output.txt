@@ -1,0 +1,17 @@
+Task 1 Solution:
+Doubled vector: 6 10 4 16 2 20 
+Filtered vector (> 5): 8 10 
+Sorted by absolute difference from 5: 5 3 2 8 1 10 
+
+Task 2 Solution:
+Students sorted by score (descending):
+Charlie: 90
+Alice: 85
+Bob: 72
+
+Students with score > 80:
+Charlie
+Alice
+
+Task 3 Solution:
+Product of even numbers: 160
