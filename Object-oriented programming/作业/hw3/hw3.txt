@@ -1,0 +1,14 @@
+根据第6章的内容，编写完整的新版分析学生成绩的程序，这个程序能对提交所有家庭作业的学生的中值成绩和漏交一次或多次的学生的中值成绩作比较，对每组的家庭作业成绩的计算使用三个方案来进行计算：中值（median），平均值（average)，已交作业的中值(optimistic_median)。
+
+这里要求使用模板函数（泛型函数）实现average，find, remove_copy，transform函数(整个项目中禁止使用<algorithm>库文件)。
+
+输出中应该列出每种方案每个种类的学生成绩的中值。
+
+提示：可以先使用<algorithm>库文件调通整个程序，然后用<algorithm.h>替换<algorithm>。
+
+请在附件中的.cpp和.h文件的//TODO后添加代码，使程序完整。hw3_output.txt为hw3_input.txt为测试输入时的输出。请同学们使用这些测试数据来验证自己的程序。
+
+命令行编译： g++ main.cpp Student_info.cpp grade.cpp analysis.cpp -o hw3.exe?-std=c++14
+运行：  hw3.exe
+
+请把所有.cpp文件和.h文件打包压缩提交。

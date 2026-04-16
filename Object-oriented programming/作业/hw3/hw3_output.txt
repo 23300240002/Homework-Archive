@@ -1,0 +1,4 @@
+median: median(did) =88.4, median(didnt) = 74.8
+average: median(did) =85.6, median(didnt) = 67.6667
+median of homework turned in: median(did) =88.4, median(didnt) = 75.8
+Press any key to continue
