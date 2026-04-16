@@ -1,0 +1,8 @@
+Bob's final grade is 82.8
+Carpenter's final grade is 76.8
+Jerry's final grade is 52.8
+Jessie's final grade is 91.4
+John's final grade is 88.4
+Kate's final grade is 70.8
+Smith's final grade is 90.4
+Tom's final grade is 74.8
