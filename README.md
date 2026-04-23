@@ -5,6 +5,7 @@
 （中英文教材文件过大不便上传，请私聊）
 
 ## Design and Analysis of Algorithms → 算法设计与分析(H) 朱山风
+（切分课件电子版与课程 PJ 文件较大不便上传，请私聊）
 
 ## Discussion on Films and British and American Culture → 影视与英美文化讨论 苗伟
 
