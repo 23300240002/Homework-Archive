@@ -3,6 +3,8 @@
 
 ## Linear Algebra → 线性代数 通用
 
+## General Physics B → 大学物理B 通用
+
 ## Algebraic Structures and Mathematical Logic → 代数结构与数理逻辑 许扬
 （中英文教材文件过大不便上传，请私聊）
 
