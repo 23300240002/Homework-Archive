@@ -1,0 +1,8 @@
+John      Your final grade is 47
+Jerry     Your final grade is 48.5
+Kate      Your final grade is 68.6
+Tom       Your final grade is 70.5
+Carpenter Your final grade is 72.5
+Bob       Your final grade is 81.1
+Jessie    Your final grade is 87
+Smith     Your final grade is 88.7
