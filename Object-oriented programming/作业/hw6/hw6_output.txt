@@ -1,0 +1,7 @@
+Please input your name:
+********************
+*                  *
+* Hello, XiaoMing! *
+*                  *
+********************
+Press any key to continue
