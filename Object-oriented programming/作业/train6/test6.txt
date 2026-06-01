@@ -1,0 +1,13 @@
+按要求用C++实现复数类Complex。Complex类中double类型的私有属性real和image分别表示实部和虚部。
+(1) 实现构造函数：
+构造函数：Complex:: Complex(double r=0,double i=0)
+(2) 实现以下重载函数：
+重载计算+=的公有函数：Complex & Complex::operator+=(const Complex & c)
+重载计算两个复数之和的公有函数：Complex Complex::operator+(const Complex & c1,const Complex & c2)
+重载输出操作符函数：ostream & operator<<(ostream & is,const Complex & c)
+重载输入操作符函数：istream & operator>>(istream & is,Complex & c)
+
+
+请在附件中的Complex.cpp和Complex.h文件中添加代码，使程序完整。test7_output.txt为test7_input.txt为测试输入时的输出。请同学们使用这些测试数据来验证自己的程序。
+
+请把所有.cpp文件和.h文件打包压缩提交。

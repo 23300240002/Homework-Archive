@@ -1,0 +1,16 @@
+为标准list类以及它的相关的迭代器类写一个简化版本。
+提示：
+list可以用一个带辅助表元的双向环状链表实现
+内存可以用new，delete来控制
+表元结构可以定义为：
+template <class T>
+struct ListNode {
+      ListNode *_prev;
+      ListNode *_next;
+      T _data;
+};
+
+
+请在附件中的.cpp和.h文件的//TODO后添加代码，使程序完整。out.txt为输出文件。请同学们使用这些测试数据来验证自己的程序。
+
+请把所有.cpp文件和.h文件打包压缩提交。

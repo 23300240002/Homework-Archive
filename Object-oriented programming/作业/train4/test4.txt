@@ -1,0 +1,40 @@
+定义一个简单类goods（商品），包含名称和数量二个属性。在此基础上，定义一个库存类stock。该库存类记录了各类商品的名称和数量，并且支持如下操作：
+1）进货：当库存中没有该商品时，把该商品加入库存；否则，更新该商品的数量。
+2）出货：仅考虑库存中包含该商品的情况。从该商品的数量中减去所销售的数量;若此时商品的数量等于0，输出相应的提示信息；若数量小于0，则抛出异常, 提示库存不足。
+3）输出：把所有商品按照数量从多到少的顺序排列,并输出货物和数量（以制表符分隔）。
+
+测试代码如下（头文件自己增加）：
+using namespace std;
+int main()
+{
+    stock s;
+    s.purchase(goods("pen", 100));
+    s.purchase(goods("mouse", 50));
+    s.purchase(goods("notepad", 200));
+    s.purchase(goods("pen", 50));
+    s.print();
+
+    try{
+        s.sell(goods("mouse", 50));
+    }catch (domain_error e) {
+        cout << e.what() << endl;
+    }
+    try{
+        s.sell(goods("pen", 210));
+    }catch (domain_error e) {
+        cout << e.what() << endl;
+    }
+
+    return 0;
+}
+程序的输出如下：
+notepad 200
+pen     150
+mouse   50
+
+Warning: Inventory of mouse is 0
+Error: insufficient inventory of pen
+
+请在附件中的.cpp和.h文件的//TODO后添加代码，使程序完整。out.txt为输出。请同学们使用这些测试数据来验证自己的程序。
+
+请把所有.cpp文件和.h文件打包压缩提交。

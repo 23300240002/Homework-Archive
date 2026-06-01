@@ -1,0 +1,6 @@
+notepad 200
+pen     150
+mouse   50
+
+Warning: Inventory of mouse is 0
+Error: insufficient inventory of pen

@@ -1,0 +1,4 @@
+Before sorting: c1 = 20 10 30
+After sorting c1 = 10 20 30
+Before sorting: c1 = Tom Jame Alice
+After sorting c1 = Alice Jame Tom
