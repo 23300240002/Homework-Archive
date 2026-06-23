@@ -27,4 +27,3 @@
 （暂未公开，请私聊）
 
 ## Artificial Intelligence → 人工智能（H） 郑骁庆
-（暂未公开，请私聊）
