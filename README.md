@@ -24,6 +24,13 @@
 ## Digital Signal Processing → 数字信号处理 薛向阳
 
 ## Computer Graphics‌ → 计算机图形学 颜波
-（暂未公开，请私聊）
 
 ## Artificial Intelligence → 人工智能（H） 郑骁庆
+
+## Microwave Engineering → 微波工程基础入门 通用
+
+## Computer-Based Test → 复旦大学计算与智能创新学院预推免机考真题回忆
+
+## Voice Generation and Text to Speech → 语音（TTS）基础入门 通用
+
+## Parallel and Distributed Computing → 并行分布式计算 张奇
